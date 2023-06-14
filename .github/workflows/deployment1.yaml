@@ -7,7 +7,9 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm 04_Practice_Project/ci
+        run: |
+          cd 04_Practice_Project
+          npm ci
       - name: Lint
         run: npm run 04_Practice_Project/lint
       - name: Test code
