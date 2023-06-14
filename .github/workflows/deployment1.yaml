@@ -11,10 +11,16 @@ jobs:
           cd 04_Practice_Project
           npm ci
       - name: Lint
-        run: npm run 04_Practice_Project/lint
+        run: |
+          cd 04_Practice_Project
+          npm run lint
       - name: Test code
-        run: npm run test
+        run: |
+          cd 04_Practice_Project 
+          npm run test
       - name: Build code
-        run: npm run build
+        run: |
+          cd 04_Practice_Project
+          npm run build
       - name: Deploy code
         run: echo "Deploying..."
